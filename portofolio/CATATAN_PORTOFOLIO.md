@@ -5,9 +5,9 @@
 | **Nama** | Sindar Felix Sihole |
 | **Kampus / Prodi** | Pradita University, Informatika (Semester 3) |
 | **Mata Kuliah** | Pendidikan Kewarganegaraan |
-| **Status** | Tahap 1: Konsep & Draf Konten (selesai) |
+| **Status** | Selesai 100% (Tahap 1 & Tahap 2 Tuntas) |
 | **Terakhir diperbarui** | 22 November 2026 |
-| **Target lanjutan** | Tahap 2: Pengerjaan kode & tampilan website |
+| **Target lanjutan** | Siap Dipresentasikan & Dikumpulkan untuk UAS |
 
 ---
 
@@ -45,10 +45,10 @@ Karena itu portofolio ini wajib memuat:
 
 ### Checklist Pemenuhan Kriteria
 - [x] Setiap proyek kelompok punya jobdesc pribadi yang spesifik
-- [ ] Tautan Blog Kelompok 4 tampil di Home (CTA) dan di Projects
-- [ ] Semua tautan WordPress (Semester 1, 2, 3) aktif dan bisa dibuka
+- [x] Tautan Blog Kelompok 4 tampil di Home (CTA) dan di Projects
+- [x] Semua tautan WordPress (Semester 1, 2, 3) aktif dan bisa dibuka
 - [x] Refleksi sudah ada di WordPress, **tidak** perlu ditulis ulang di website
-- [ ] Website bisa dibuka tanpa instalasi tambahan
+- [x] Website bisa dibuka tanpa instalasi tambahan
 
 ---
 
@@ -257,15 +257,15 @@ portofolio/
 
 ## 7. To-Do / Agenda Selanjutnya
 
-- [ ] Buat file dasar `index.html`, `style.css`, `script.js`
-- [ ] Implementasikan dark tech UI dengan animasi halus ala template Soumyajit
+- [x] Buat file dasar `index.html`, `style.css`, `script.js`
+- [x] Implementasikan dark tech UI dengan animasi halus ala template Soumyajit
 - [x] Susun section Pengalaman (draf + foto sudah dicocokkan)
-- [ ] Masukkan rekam jejak WordPress (Semester 1, 2, 3) ke section Projects
+- [x] Masukkan rekam jejak WordPress (Semester 1, 2, 3) ke section Projects
 - [x] Isi jobdesc pribadi untuk setiap proyek
 - [x] Cocokkan 3 link YouTube ke proyek (Agama = Link 1, Pancasila = Link 2, Kewarganegaraan = Link 3)
-- [ ] Cek ulang semua tautan WordPress di browser
-- [ ] Uji tampilan di HP dan desktop
-- [ ] Kumpulkan sesuai format dan tenggat dari dosen
+- [x] Cek ulang semua tautan WordPress di browser
+- [x] Uji tampilan di HP dan desktop
+- [x] Kumpulkan sesuai format dan tenggat dari dosen
 
 ---
 
