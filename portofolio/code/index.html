@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindar Felix Sihole | Portfolio</title>
+  <meta name="description" content="Personal Portfolio - Sindar Felix Sihole | Mahasiswa Informatika Pradita University (UAS Kewarganegaraan)">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c770f0'>Sf.</text></svg>">
+  
+  <!-- Google Fonts: Raleway & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet (Soumyajit Theme Adapted) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Starfield Particle Canvas -->
+  <canvas id="tsparticles"></canvas>
+
+  <!-- Navigation Bar (Soumyajit Navbar Style) -->
+  <header class="navbar-area sticky-nav" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="navbar-brand">
+        <span class="brand-text">Sf<span class="purple">.</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <i class="fa-regular fa-user"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">
+              <i class="fa-solid fa-laptop-code"></i> Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <i class="fa-solid fa-tv"></i> Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">
+              <i class="fa-solid fa-award"></i> Pengalaman
+            </a>
+          </li>
+          <li class="nav-item fork-btn-wrapper">
+            <a href="https://github.com/akuntugassindar-spec" target="_blank" rel="noopener noreferrer" class="fork-btn-inner" title="GitHub Repository Progres Proyek">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </li>
+          <li class="nav-item fork-btn-wrapper">
+            <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="fork-btn-inner">
+              <i class="fa-brands fa-wordpress"></i> Blog Kel. 4
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HOME SECTION ================= -->
+    <section class="home-section" id="home">
+      <div class="home-content container">
+        <div class="home-grid">
+          <!-- Left Column -->
+          <div class="home-header">
+            <h1 class="heading">
+              Hi There! <span class="wave">👋🏻</span>
+            </h1>
+            <h1 class="heading-name">
+              I'M <strong class="main-name">SINDAR FELIX SIHOLE</strong>
+            </h1>
+            <div class="typewriter-box">
+              <span class="purple" id="typewriter"></span>
+              <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="home-tagline">
+              "Merancang Antarmuka yang Indah, Fungsional, dan Bermakna bagi Banyak Orang."
+            </p>
+            <div class="home-btn-group">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-diagram-project"></i> Lihat Proyek & Jobdesc
+              </a>
+              <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-brands fa-wordpress"></i> Kunjungi Blog Kelompok 4
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column (Programmer Illustration) -->
+          <div class="home-illustration">
+            <svg viewBox="0 0 500 400" class="home-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#c770f0" />
+                  <stop offset="100%" stop-color="#623686" />
+                </linearGradient>
+                <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00f5d4" />
+                  <stop offset="100%" stop-color="#3a86ff" />
+                </linearGradient>
+              </defs>
+              <!-- Workspace Desk -->
+              <rect x="50" y="320" width="400" height="15" rx="5" fill="#2d1950" opacity="0.8"/>
+              <!-- Laptop -->
+              <path d="M160 310 L340 310 L320 200 L180 200 Z" fill="#1b1a2e" stroke="#c770f0" stroke-width="3"/>
+              <rect x="185" y="210" width="130" height="85" rx="4" fill="#0b001a"/>
+              <!-- Code Lines on Screen -->
+              <line x1="195" y1="225" x2="260" y2="225" stroke="#c770f0" stroke-width="3" stroke-linecap="round"/>
+              <line x1="205" y1="238" x2="285" y2="238" stroke="#00f5d4" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="205" y1="250" x2="250" y2="250" stroke="#f72585" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="195" y1="265" x2="295" y2="265" stroke="#3a86ff" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="195" y1="278" x2="230" y2="278" stroke="#c770f0" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="140" y="310" width="220" height="10" rx="3" fill="#3f2766"/>
+              <!-- Programmer Avatar Silhouette -->
+              <circle cx="250" cy="120" r="45" fill="url(#purpleGrad)"/>
+              <path d="M190 200 C190 150 310 150 310 200 Z" fill="#2d1950"/>
+              <circle cx="235" cy="118" r="5" fill="#fff"/>
+              <circle cx="265" cy="118" r="5" fill="#fff"/>
+              <!-- Floating Code & Particle Elements -->
+              <g class="floating-icons">
+                <circle cx="90" cy="100" r="32" fill="#1b1a2e" stroke="#c770f0" stroke-width="2"/>
+                <text x="90" y="108" font-family="'Raleway', sans-serif" font-weight="bold" font-size="22" fill="#c770f0" text-anchor="middle">&lt;/&gt;</text>
+                
+                <circle cx="410" cy="140" r="30" fill="#1b1a2e" stroke="#00f5d4" stroke-width="2"/>
+                <text x="410" y="147" font-family="'Raleway', sans-serif" font-weight="bold" font-size="16" fill="#00f5d4" text-anchor="middle">UI/UX</text>
+
+                <circle cx="110" cy="240" r="26" fill="#1b1a2e" stroke="#3a86ff" stroke-width="2"/>
+                <text x="110" y="247" font-family="'Raleway', sans-serif" font-weight="bold" font-size="14" fill="#3a86ff" text-anchor="middle">React</text>
+
+                <circle cx="390" cy="260" r="28" fill="#1b1a2e" stroke="#f72585" stroke-width="2"/>
+                <text x="390" y="267" font-family="'Raleway', sans-serif" font-weight="bold" font-size="14" fill="#f72585" text-anchor="middle">JS</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home About / Introduce Section (Home2.js style) -->
+      <div class="home-about-section container" id="intro">
+        <div class="home-about-grid">
+          <div class="home-about-description">
+            <h1 class="home-about-title">
+              LET ME <span class="purple">INTRODUCE</span> MYSELF
+            </h1>
+            <p class="home-about-body">
+              Saya adalah mahasiswa Informatika semester 3 di <strong>Pradita University</strong> sekaligus putra Indonesia yang bersemangat di dunia <em>frontend development</em>.
+              <br><br>
+              Bagi saya, membangun antarmuka web bukan sekadar menulis kode, tetapi memadukan estetika desain, kenyamanan pengguna, dan ide inovatif yang benar-benar berguna.
+              <br><br>
+              Saya mahir dan terbiasa dengan teknologi utama seperti
+              <i><b class="purple"> HTML, CSS, JavaScript, dan React.js. </b></i>
+              <br><br>
+              Bidang minat utama saya adalah membangun tampilan antarmuka web yang inovatif, interaktif, dan modern. Saya terbiasa memecahkan masalah kode secara mandiri dan mengoptimalkannya dengan bantuan <i><b class="purple">Kecerdasan Buatan (AI)</b></i> sebagai akselerator berpikir.
+              <br><br>
+              Dalam kerja tim, saya menjunjung tinggi nilai <strong>gotong royong</strong> dan integritas, serta aktif memegang peran penting pada proyek akademik maupun kolaborasi.
+            </p>
+          </div>
+
+          <div class="myAvatar">
+            <div class="avatar-card">
+              <div class="avatar-inner">
+                <i class="fa-solid fa-user-astronaut avatar-icon"></i>
+                <div class="avatar-badge">
+                  <span class="purple">Informatika</span><br>
+                  <small>Pradita University • Sem 3</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links at Bottom of Home -->
+        <div class="home-about-social">
+          <h1>FIND ME ON</h1>
+          <p>Feel free to <span class="purple">connect </span>with me</p>
+          <ul class="home-about-social-links">
+            <li class="social-icons">
+              <a href="https://github.com/akuntugassindar-spec" target="_blank" rel="noreferrer" class="icon-colour home-social-icons" title="GitHub Pribadi (Progres Proyek)">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noreferrer" class="icon-colour home-social-icons" title="Blog Kelompok 4 Kewarganegaraan">
+                <i class="fa-brands fa-wordpress"></i>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/" target="_blank" rel="noreferrer" class="icon-colour home-social-icons" title="Portofolio Pancasila">
+                <i class="fa-solid fa-users"></i>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="https://tugasagamasindarfelixsihole.wordpress.com/" target="_blank" rel="noreferrer" class="icon-colour home-social-icons" title="Blog Agama">
+                <i class="fa-solid fa-book-bible"></i>
+              </a>
+            </li>
+            <li class="social-icons">
+              <a href="https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX" target="_blank" rel="noreferrer" class="icon-colour home-social-icons" title="YouTube Karya Video/Podcast">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h1 class="project-heading text-center">
+          Know Who <strong class="purple">I'M</strong>
+        </h1>
+
+        <!-- Centered HD Profile Photo -->
+        <div class="about-img-centered-wrapper">
+          <div class="about-img-card">
+            <img src="assets/img/sindar-profile.jpg" alt="Sindar Felix Sihole - About Me" class="about-profile-img">
+          </div>
+        </div>
+
+        <!-- About Text Card (Centered) -->
+        <div class="about-card-box about-card-centered">
+          <p class="about-body">
+            Halo Semuanya, Saya <span class="purple">Sindar Felix Sihole</span> dari <span class="purple">Indonesia</span>.
+            <br>
+            Saat ini saya sedang menempuh pendidikan di <span class="purple">Pradita University</span>, Program Studi Informatika (Semester 3).
+            <br><br>
+            Fokus studi saya adalah memperkuat fondasi awal ilmu informatika, logika pemrograman, algoritma struktur data, serta dasar-dasar rekayasa perangkat lunak modern.
+            <br><br>
+            Di luar coding teknis, berikut adalah beberapa aktivitas dan keahlian kreatif yang saya sukai:
+          </p>
+          <ul class="about-activity-list">
+            <li class="about-activity">
+              <i class="fa-solid fa-hand-point-right purple"></i> Merancang UI/UX & Prototipe Antarmuka di <strong>Figma</strong>
+            </li>
+            <li class="about-activity">
+              <i class="fa-solid fa-hand-point-right purple"></i> Desain Visual Grafis & Publikasi Media di <strong>Canva</strong>
+            </li>
+            <li class="about-activity">
+              <i class="fa-solid fa-hand-point-right purple"></i> Problem-Solving Mandiri & Eksplorasi Perkembangan AI
+            </li>
+            <li class="about-activity">
+              <i class="fa-solid fa-hand-point-right purple"></i> Kolaborasi Tim & Menjunjung Semangat Gotong Royong
+            </li>
+          </ul>
+
+          <blockquote class="about-quote">
+            <p>"Menyatukan Inovasi Desain Antarmuka dan Solusi Digital untuk Kemajuan Bersama!"</p>
+            <footer class="blockquote-footer">— Sindar Felix Sihole</footer>
+          </blockquote>
+        </div>
+
+        <!-- ================= SKILLS SECTION (Tech Icons) ================= -->
+        <div id="skills" class="skills-wrapper">
+          <h1 class="project-heading text-center">
+            Professional <strong class="purple">Skillset</strong>
+          </h1>
+
+          <div class="tech-icons-row">
+            <div class="tech-icons" title="HTML5">
+              <i class="fa-brands fa-html5"></i>
+              <span class="tech-name">HTML5</span>
+            </div>
+            <div class="tech-icons" title="CSS3">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="tech-name">CSS3</span>
+            </div>
+            <div class="tech-icons" title="JavaScript">
+              <i class="fa-brands fa-js"></i>
+              <span class="tech-name">JavaScript</span>
+            </div>
+            <div class="tech-icons" title="React.js">
+              <i class="fa-brands fa-react"></i>
+              <span class="tech-name">React.js</span>
+            </div>
+            <div class="tech-icons" title="Python">
+              <i class="fa-brands fa-python"></i>
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-icons" title="Django">
+              <i class="fa-solid fa-cube"></i>
+              <span class="tech-name">Django</span>
+            </div>
+            <div class="tech-icons" title="Flask">
+              <i class="fa-solid fa-pepper-hot"></i>
+              <span class="tech-name">Flask</span>
+            </div>
+            <div class="tech-icons" title="Node.js">
+              <i class="fa-brands fa-node-js"></i>
+              <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-icons" title="Express.js">
+              <i class="fa-solid fa-network-wired"></i>
+              <span class="tech-name">Express.js</span>
+            </div>
+            <div class="tech-icons" title="MySQL">
+              <i class="fa-solid fa-database"></i>
+              <span class="tech-name">MySQL</span>
+            </div>
+            <div class="tech-icons" title="MariaDB">
+              <i class="fa-solid fa-server"></i>
+              <span class="tech-name">MariaDB</span>
+            </div>
+            <div class="tech-icons" title="SQLite">
+              <i class="fa-solid fa-file-invoice"></i>
+              <span class="tech-name">SQLite</span>
+            </div>
+            <div class="tech-icons" title="PHP">
+              <i class="fa-brands fa-php"></i>
+              <span class="tech-name">PHP</span>
+            </div>
+          </div>
+
+          <h1 class="project-heading text-center" style="margin-top: 60px;">
+            <strong class="purple">Tools</strong> I use
+          </h1>
+
+          <div class="tech-icons-row">
+            <div class="tech-icons" title="Figma">
+              <i class="fa-brands fa-figma"></i>
+              <span class="tech-name">Figma</span>
+            </div>
+            <div class="tech-icons" title="Canva">
+              <i class="fa-solid fa-palette"></i>
+              <span class="tech-name">Canva</span>
+            </div>
+            <div class="tech-icons" title="VS Code">
+              <i class="fa-solid fa-code"></i>
+              <span class="tech-name">VS Code</span>
+            </div>
+            <div class="tech-icons" title="Git">
+              <i class="fa-brands fa-git-alt"></i>
+              <span class="tech-name">Git</span>
+            </div>
+            <div class="tech-icons" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span class="tech-name">GitHub</span>
+            </div>
+            <div class="tech-icons" title="AI Acceleration">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span class="tech-name">AI Assisted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="project-section" id="projects">
+      <div class="container">
+        <h1 class="project-heading text-center">
+          My Recent <strong class="purple">Works</strong>
+        </h1>
+        <p class="project-subtext text-center">
+          Daftar proyek tugas mata kuliah (Kewarganegaraan & Pancasila), proyek rekayasa perangkat lunak, serta rekam jejak WordPress.
+        </p>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-group">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="mpk">Tugas MPK (Kewarganegaraan & Pancasila)</button>
+          <button class="filter-btn" data-filter="web">Web & Software</button>
+          <button class="filter-btn" data-filter="wordpress">Rekam Jejak WordPress</button>
+        </div>
+
+        <div class="projects-grid-container">
+          <!-- 1. Videografis Kewarganegaraan -->
+          <div class="project-col" data-category="mpk">
+            <div class="project-card-view">
+              <div class="card-status-badge status-ongoing">Sedang Berjalan</div>
+              <div class="card-header-icon"><i class="fa-solid fa-video"></i></div>
+              <h3 class="card-title">Videografis Kewarganegaraan</h3>
+              <p class="card-text">
+                Karya video bertema hak, kewajiban, dan peran warga negara dalam menjaga persatuan di era informasi digital.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-user-check purple"></i> Jobdesc Pribadi:</span>
+                <p>Mengatur dan memantau progres editing videografis agar sesuai jadwal dan konsep yang disepakati, serta memberikan saran dan kritik yang membangun terhadap hasil video demi meningkatkan kualitas akhirnya.</p>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Tonton
+                </a>
+                <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Blog Kel. 4
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Podcast Kewarganegaraan -->
+          <div class="project-col" data-category="mpk">
+            <div class="project-card-view">
+              <div class="card-status-badge status-ongoing">Sedang Berjalan</div>
+              <div class="card-header-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+              <h3 class="card-title">Podcast Kewarganegaraan</h3>
+              <p class="card-text">
+                Diskusi audio interaktif seputar isu kewarganegaraan, program kemasyarakatan (MBG, sekolah penerima manfaat, dan SPPG).
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-user-check purple"></i> Jobdesc Pribadi:</span>
+                <p>Mencari dan menyusun materi riset tentang program MBG, sekolah penerima manfaat, dan SPPG sebagai bahan pertanyaan serta landasan diskusi podcast.</p>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Dengarkan
+                </a>
+                <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Blog Kel. 4
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Videografis Pancasila -->
+          <div class="project-col" data-category="mpk">
+            <div class="project-card-view">
+              <div class="card-status-badge status-done">Selesai (Sem. 2)</div>
+              <div class="card-header-icon"><i class="fa-solid fa-film"></i></div>
+              <h3 class="card-title">Videografis Pancasila</h3>
+              <p class="card-text">
+                Karya video animasi yang mengangkat nilai-nilai luhur Pancasila, kebersamaan, dan toleransi dalam kehidupan bermasyarakat.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-user-check purple"></i> Jobdesc Pribadi:</span>
+                <p>Membuat animasi gerakan sendiri dengan merekam (take) video gerakan saya, lalu menjadikannya dasar animasi sekaligus mengambil suaranya langsung dari rekaman take video tersebut.</p>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://youtu.be/MToC7Hp4ZPQ?si=SM15yngVq0U-W5x1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Tonton
+                </a>
+                <a href="https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Portofolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Podcast Pancasila -->
+          <div class="project-col" data-category="mpk">
+            <div class="project-card-view">
+              <div class="card-status-badge status-done">Selesai (Sem. 2)</div>
+              <div class="card-header-icon"><i class="fa-solid fa-podcast"></i></div>
+              <h3 class="card-title">Podcast Pancasila</h3>
+              <p class="card-text">
+                Diskusi audio yang mengupas penerapan nilai Pancasila secara santai, komunikatif, dan mudah dipahami oleh generasi muda.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-user-check purple"></i> Jobdesc Pribadi:</span>
+                <p>Bertindak sebagai host: mengajukan pertanyaan kepada narasumber, menyimak, lalu menerima dan merangkum jawabannya agar alur diskusi tetap hidup dan mudah dipahami.</p>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://youtu.be/MToC7Hp4ZPQ?si=SM15yngVq0U-W5x1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Dengarkan
+                </a>
+                <a href="https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Portofolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Blog Kelompok 4 Kewarganegaraan (Catatan Dosen No. 5) -->
+          <div class="project-col" data-category="mpk">
+            <div class="project-card-view highlight-border">
+              <div class="card-status-badge status-gold"><i class="fa-solid fa-star"></i> Poin ⑤ Penilaian Dosen</div>
+              <div class="card-header-icon"><i class="fa-brands fa-wordpress"></i></div>
+              <h3 class="card-title">Blog Kelompok 4 Kewarganegaraan</h3>
+              <p class="card-text">
+                Pusat dokumentasi digital Kelompok 4 yang memuat proposal, laporan kegiatan, podcast, dan video kegiatan lengkap.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-link purple"></i> Integrasi Portofolio:</span>
+                <p>Menghubungkan portofolio pribadi ini ke platform induk dokumentasi kelompok dan mempertanggungjawabkan kontribusi spesifik saya di dalam tim.</p>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi Blog Kelompok 4
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Sistem Informasi Kacamata -->
+          <div class="project-col" data-category="web">
+            <div class="project-card-view">
+              <div class="card-status-badge status-tech">Web Fullstack</div>
+              <div class="card-header-icon"><i class="fa-solid fa-glasses"></i></div>
+              <h3 class="card-title">Sistem Antar-Jemput Servis Kacamata</h3>
+              <p class="card-text">
+                Aplikasi web yang memudahkan pelanggan mengirim kacamata untuk perbaikan dan penggantian lensa melalui layanan antar-jemput tanpa harus ke toko.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-laptop-code purple"></i> Peran:</span>
+                <p><strong>Fullstack Developer</strong> — Merancang dan membangun tampilan antarmuka (frontend) sekaligus logika server dan basis data (backend) sistem.</p>
+              </div>
+              <div class="tech-tag-row">
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Fullstack</span>
+                <span class="tech-tag">Database</span>
+              </div>
+              <div class="card-btn-group">
+                <a href="https://optikexpress.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Website (optikexpress.vercel.app)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. FoodHub -->
+          <div class="project-col" data-category="web">
+            <div class="project-card-view">
+              <div class="card-status-badge status-tech">Web Frontend</div>
+              <div class="card-header-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h3 class="card-title">FoodHub: Platform Resep Makanan</h3>
+              <p class="card-text">
+                Website interaktif tempat pengguna menemukan, membaca, dan berbagi ragam resep makanan nusantara maupun internasional dengan layout modern.
+              </p>
+              <div class="jobdesc-card-box">
+                <span class="jobdesc-title"><i class="fa-solid fa-laptop-code purple"></i> Peran:</span>
+                <p><strong>Frontend Developer</strong> — Merancang dan membangun tampilan antarmuka FoodHub agar estetik, rapi, responsif, dan mudah digunakan.</p>
+              </div>
+              <div class="tech-tag-row">
+                <span class="tech-tag">Frontend</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- WordPress 3 Semester Section -->
+        <div class="wp-timeline-box" id="wpSection" data-category="wordpress">
+          <h2 class="project-heading text-center" style="font-size: 1.8rem; margin-bottom: 8px;">
+            <i class="fa-brands fa-wordpress purple"></i> Rekam Jejak Blog <strong class="purple">(3 Semester)</strong>
+          </h2>
+          <p class="project-subtext text-center">
+            Dokumentasi tugas mata kuliah umum/karakter (MPK) selama di Pradita University. Refleksi pembelajaran tersedia langsung di dalam masing-masing tautan blog.
+          </p>
+
+          <div class="wp-cards-grid">
+            <!-- Sem 1 -->
+            <div class="wp-card-view">
+              <span class="wp-sem-badge">Semester 1</span>
+              <h4>Agama</h4>
+              <p class="wp-meta"><i class="fa-regular fa-user purple"></i> Blog Pribadi</p>
+              <p class="wp-description">Dokumentasi penugasan dan refleksi pembelajaran mata kuliah Agama.</p>
+              <div class="wp-note">
+                <i class="fa-solid fa-circle-check"></i> Refleksi pembelajaran tersedia di blog ini.
+              </div>
+              <div class="card-btn-group">
+                <a href="https://tugasagamasindarfelixsihole.wordpress.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Buka Blog
+                </a>
+                <a href="https://youtu.be/fnVkoIUTAbA?si=yoUrjjo2d3V5_WHe" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Tonton
+                </a>
+              </div>
+            </div>
+
+            <!-- Sem 2 -->
+            <div class="wp-card-view">
+              <span class="wp-sem-badge">Semester 2</span>
+              <h4>Pancasila</h4>
+              <p class="wp-meta"><i class="fa-solid fa-users purple"></i> Blog Kelompok & Portofolio</p>
+              <p class="wp-description">Halaman Portofolio Pancasila yang merangkum karya, video, podcast, dan tugas kelompok.</p>
+              <div class="wp-note">
+                <i class="fa-solid fa-circle-check"></i> Refleksi pembelajaran tersedia di blog ini.
+              </div>
+              <div class="card-btn-group">
+                <a href="https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Portofolio
+                </a>
+                <a href="https://youtu.be/MToC7Hp4ZPQ?si=SM15yngVq0U-W5x1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Tonton
+                </a>
+              </div>
+            </div>
+
+            <!-- Sem 3 -->
+            <div class="wp-card-view">
+              <span class="wp-sem-badge">Semester 3 (Berjalan)</span>
+              <h4>Kewarganegaraan</h4>
+              <p class="wp-meta"><i class="fa-solid fa-users-gear purple"></i> Blog Kelompok 4</p>
+              <p class="wp-description">Pusat dokumentasi kegiatan Kelompok 4 (proposal, podcast, videografi, dan laporan akhir).</p>
+              <div class="wp-note">
+                <i class="fa-solid fa-circle-check"></i> Refleksi pembelajaran tersedia di blog ini.
+              </div>
+              <div class="card-btn-group">
+                <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-wordpress"></i> Blog Kel. 4
+                </a>
+                <a href="https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-youtube"></i> Tonton
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE SECTION ================= -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <h1 class="project-heading text-center">
+          Event & <strong class="purple">Experience</strong>
+        </h1>
+        <p class="project-subtext text-center">
+          Dokumentasi aktivitas dan kegiatan di luar perkuliahan untuk memperluas koneksi serta wawasan industri teknologi.
+        </p>
+
+        <div class="experience-container">
+          <!-- Event 1: Bootcamp Genesis 1.0 -->
+          <div class="project-card-view experience-box">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge"><i class="fa-solid fa-fire purple"></i> Makrab Informatika 2026</span>
+                <h2 class="exp-title">Bootcamp Genesis 1.0</h2>
+                <div class="exp-info">
+                  <span><i class="fa-solid fa-users purple"></i> Penyelenggara: Panitia HIMTIKA</span>
+                  <span><i class="fa-solid fa-calendar-days purple"></i> Tahun: 2026</span>
+                  <span><i class="fa-solid fa-location-dot purple"></i> Villa Meciho, Bogor</span>
+                  <span><i class="fa-solid fa-id-badge purple"></i> Peran: Peserta</span>
+                </div>
+              </div>
+              <div class="exp-theme-tag">
+                "Build connections, create memories"
+              </div>
+            </div>
+
+            <p class="exp-text">
+              Mengikuti malam keakraban (makrab) mahasiswa Informatika yang dikemas dalam bentuk bootcamp. Kegiatan ini mempererat hubungan antar mahasiswa dan pengurus HIMTIKA, serta membangun rasa kebersamaan, kepemimpinan, dan solidaritas dalam lingkungan program studi Informatika Pradita University.
+            </p>
+
+            <div class="exp-gallery">
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/bootcamp-genesis-1.png', 'Bootcamp Genesis 1.0 - Foto Bersama 1')">
+                <img src="assets/img/bootcamp-genesis-1.png" onerror="this.onerror=null; this.src='bootcamp-genesis-1.png';" alt="Bootcamp Genesis 1.0, foto bersama 1" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Lihat Foto</div>
+              </div>
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/bootcamp-genesis-2.png', 'Bootcamp Genesis 1.0 - Foto Bersama 2')">
+                <img src="assets/img/bootcamp-genesis-2.png" onerror="this.onerror=null; this.src='bootcamp-genesis-2.png';" alt="Bootcamp Genesis 1.0, foto bersama 2" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Lihat Foto</div>
+              </div>
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/bootcamp-genesis-3.png', 'Bootcamp Genesis 1.0 - Foto Bersama 3')">
+                <img src="assets/img/bootcamp-genesis-3.png" onerror="this.onerror=null; this.src='bootcamp-genesis-3.png';" alt="Bootcamp Genesis 1.0, foto bersama 3" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Lihat Foto</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2: Indocomtech 2025 -->
+          <div class="project-card-view experience-box">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge"><i class="fa-solid fa-microchip purple"></i> Pameran Teknologi Komputer</span>
+                <h2 class="exp-title">Indocomtech 2025</h2>
+                <div class="exp-info">
+                  <span><i class="fa-solid fa-location-dot purple"></i> ICE BSD, Tangerang</span>
+                  <span><i class="fa-solid fa-calendar-days purple"></i> 23 – 26 Oktober 2025</span>
+                  <span><i class="fa-solid fa-id-badge purple"></i> Peran: Pengunjung / Peserta</span>
+                </div>
+              </div>
+              <div class="exp-theme-tag">
+                National Tech Exhibition
+              </div>
+            </div>
+
+            <p class="exp-text">
+              Mengunjungi pameran teknologi dan komputer terbesar di Indonesia, <strong>Indocomtech 2025</strong>. Mengobservasi langsung tren perkembangan perangkat keras, kecerdasan buatan, keamanan siber, dan interaktivitas digital dari para pelaku industri terkemuka:
+            </p>
+
+            <div class="indocom-highlights">
+              <div class="highlight-box">
+                <i class="fa-solid fa-chart-line purple"></i>
+                <div>
+                  <strong>Finex:</strong> Tool cerdas inovatif untuk membantu pengambilan keputusan finansial tepat waktu.
+                </div>
+              </div>
+              <div class="highlight-box">
+                <i class="fa-solid fa-shield-halved purple"></i>
+                <div>
+                  <strong>PT Leyun Cloud Asia (Booth 83):</strong> Layanan cloud serta proteksi website dan aplikasi enterprise dari ancaman siber.
+                </div>
+              </div>
+              <div class="highlight-box">
+                <i class="fa-solid fa-tv purple"></i>
+                <div>
+                  <strong>EZScreen:</strong> Layar/panel interaktif pintar mutakhir untuk ruang kelas dan presentasi kolaboratif.
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-gallery gallery-4">
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/indocomtech-2025-banner.png', 'Indocomtech 2025 - Banner Acara di ICE BSD')">
+                <img src="assets/img/indocomtech-2025-banner.png" onerror="this.onerror=null; this.src='indocomtech-2025-banner.png';" alt="Indocomtech 2025, banner acara di ICE BSD" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Banner Acara</div>
+              </div>
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/indocomtech-2025-finex.png', 'Indocomtech 2025 - Booth Finex')">
+                <img src="assets/img/indocomtech-2025-finex.png" onerror="this.onerror=null; this.src='indocomtech-2025-finex.png';" alt="Indocomtech 2025, booth Finex" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Booth Finex</div>
+              </div>
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/indocomtech-2025-leyun-cloud-asia.png', 'Indocomtech 2025 - Booth PT Leyun Cloud Asia')">
+                <img src="assets/img/indocomtech-2025-leyun-cloud-asia.png" onerror="this.onerror=null; this.src='indocomtech-2025-leyun-cloud-asia.png';" alt="Indocomtech 2025, booth PT Leyun Cloud Asia" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> Leyun Cloud</div>
+              </div>
+              <div class="exp-photo-card" onclick="openLightbox('assets/img/indocomtech-2025-ezscreen.png', 'Indocomtech 2025 - Booth EZScreen')">
+                <img src="assets/img/indocomtech-2025-ezscreen.png" onerror="this.onerror=null; this.src='indocomtech-2025-ezscreen.png';" alt="Indocomtech 2025, booth EZScreen" loading="lazy">
+                <div class="photo-overlay"><i class="fa-solid fa-expand"></i> EZScreen</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Photo Gallery -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" alt="Preview Foto">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- ================= FOOTER (Soumyajit Style) ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copywright">
+        <h3>Designed and Developed by <span class="purple">Sindar Felix Sihole</span></h3>
+      </div>
+      <div class="footer-copywright">
+        <h3>Copyright © 2026 <span class="purple">Sindar Felix Sihole</span></h3>
+      </div>
+      <div class="footer-body">
+        <ul class="footer-icons">
+          <li class="social-icons">
+            <a href="https://github.com/akuntugassindar-spec" target="_blank" rel="noopener noreferrer" style="color: white;" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/" target="_blank" rel="noopener noreferrer" style="color: white;">
+              <i class="fa-brands fa-wordpress"></i>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/" target="_blank" rel="noopener noreferrer" style="color: white;">
+              <i class="fa-solid fa-users"></i>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://tugasagamasindarfelixsihole.wordpress.com/" target="_blank" rel="noopener noreferrer" style="color: white;">
+              <i class="fa-solid fa-book-bible"></i>
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX" target="_blank" rel="noopener noreferrer" style="color: white;">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
