@@ -60,7 +60,7 @@ Dokumentasi tugas mata kuliah umum/karakter (MPK) selama di Pradita University.
 |---|---|---|---|---|
 | 1 | Pendidikan Agama | Blog pribadi | [tugasagamasindarfelixsihole.wordpress.com](https://tugasagamasindarfelixsihole.wordpress.com/) | [Tonton](https://youtu.be/fnVkoIUTAbA?si=yoUrjjo2d3V5_WHe) |
 | 2 | Pendidikan Pancasila | Blog kelompok & portofolio | [tugaskelompokpancasila.wordpress.com/portofolio-pancasila](https://tugaskelompokpancasila.wordpress.com/portofolio-pancasila/) | [Tonton](https://youtu.be/MToC7Hp4ZPQ?si=SM15yngVq0U-W5x1) |
-| 3 | Pendidikan Kewarganegaraan (berjalan) | Blog kelompok (Kelompok 4) | [daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4](https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/) | [Tonton](https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX) |
+| 3 | Pendidikan Kewarganegaraan (berjalan) | Blog kelompok (Kelompok 4) | [daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4](https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/) | [Videografi](https://youtu.be/iYE9_achieo?si=NIXJvUxqmjDUd6zz) · [Podcast](https://youtu.be/z9G19uK8AYw?si=QpU_J1T8sOviP9jj) |
 
 **Deskripsi singkat untuk ditampilkan di web:**
 - **Semester 1:** Dokumentasi penugasan dan refleksi pembelajaran mata kuliah Pendidikan Agama.
@@ -129,26 +129,26 @@ Merancang Antarmuka yang Indah, Fungsional, dan Bermakna bagi Banyak Orang.
 
 > Tautan hasil proyek dikumpulkan lewat WordPress, dan video/podcast ditonton lewat YouTube.
 
-**Link YouTube per mata kuliah:**
+**Tautan YouTube per mata kuliah dan proyek:**
 
 | Mata Kuliah | Link YouTube |
 |---|---|
 | Pendidikan Agama (Semester 1) | https://youtu.be/fnVkoIUTAbA?si=yoUrjjo2d3V5_WHe |
 | Pendidikan Pancasila (Semester 2) | https://youtu.be/MToC7Hp4ZPQ?si=SM15yngVq0U-W5x1 |
-| Pendidikan Kewarganegaraan (Semester 3) | https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX |
+| Pendidikan Kewarganegaraan (Semester 3) | Videografi: https://youtu.be/iYE9_achieo?si=NIXJvUxqmjDUd6zz · Podcast: https://youtu.be/z9G19uK8AYw?si=QpU_J1T8sOviP9jj |
 
-> Satu link dipakai bersama oleh videografis dan podcast pada mata kuliah yang sama. Kalau nanti video dan podcast punya link sendiri-sendiri, tinggal pisahkan.
+> Videografi dan podcast memiliki tautan YouTube masing-masing.
 
 **1. Videografis Kewarganegaraan** *(berjalan)*
 - **Deskripsi:** Karya video bertema hak, kewajiban, dan peran warga negara.
 - **Jobdesc Pribadi:** Mengatur dan memantau progres editing videografis agar sesuai jadwal dan konsep yang disepakati, serta memberikan saran dan kritik yang membangun terhadap hasil video demi meningkatkan kualitas akhirnya.
-- **Tonton:** [Tonton di YouTube](https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX)
+- **Tonton:** [Tonton di YouTube](https://youtu.be/iYE9_achieo?si=NIXJvUxqmjDUd6zz)
 - **Tautan:** [Lihat di WordPress](https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/)
 
 **2. Podcast Kewarganegaraan** *(berjalan)*
 - **Deskripsi:** Diskusi audio seputar isu kewarganegaraan dan kehidupan bermasyarakat.
 - **Jobdesc Pribadi:** Mencari dan menyusun materi riset tentang program MBG, sekolah penerima manfaat, dan SPPG sebagai bahan pertanyaan serta landasan diskusi podcast.
-- **Dengarkan:** [Dengarkan di YouTube](https://youtu.be/z9G19uK8AYw?si=FB25OJ2ke1oZNUvX)
+- **Dengarkan:** [Dengarkan di YouTube](https://youtu.be/z9G19uK8AYw?si=QpU_J1T8sOviP9jj)
 - **Tautan:** [Lihat di WordPress](https://daffaabdurrasyidblog.wordpress.com/2026/10/25/kewarganegaraankel4/)
 
 **3. Videografis Pancasila**

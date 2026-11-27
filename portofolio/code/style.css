@@ -1308,3 +1308,318 @@ main {
   border-color: var(--imp-text-color);
   box-shadow: 0 8px 35px 8px rgba(199, 112, 240, 0.75);
 }
+
+/* Refined portfolio presentation */
+:root {
+  --surface: rgba(18, 16, 34, 0.78);
+  --surface-strong: rgba(20, 17, 39, 0.94);
+  --muted-text: #c9c1d8;
+  --soft-border: rgba(199, 112, 240, 0.28);
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  background-color: #100e1b;
+  background-image:
+    radial-gradient(ellipse at 12% 18%, rgba(120, 55, 170, 0.2), transparent 34rem),
+    radial-gradient(ellipse at 88% 44%, rgba(25, 115, 135, 0.1), transparent 30rem),
+    linear-gradient(145deg, #12101f 0%, #171329 48%, #100e1b 100%);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #00f5d4;
+  outline-offset: 4px;
+}
+
+.navbar-area {
+  background: rgba(15, 13, 27, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar-brand {
+  letter-spacing: -1.5px;
+  text-shadow: 0 0 22px rgba(199, 112, 240, 0.35);
+}
+
+.nav-link {
+  font-size: 0.94rem;
+}
+
+.home-section {
+  background-image:
+    radial-gradient(ellipse at 76% 34%, rgba(123, 53, 162, 0.19), transparent 27rem),
+    var(--image-gradient),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: center, top center, center;
+  background-size: cover, cover, 60px 60px;
+}
+
+.home-content {
+  padding-top: 64px;
+}
+
+.home-header::before {
+  content: "PORTOFOLIO  /  INFORMATIKA";
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 16px 20px;
+  padding: 6px 12px;
+  border: 1px solid var(--soft-border);
+  border-radius: 999px;
+  background: rgba(199, 112, 240, 0.08);
+  color: #d7a4ef;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.heading,
+.heading-name {
+  line-height: 1.2;
+}
+
+.main-name {
+  background: linear-gradient(100deg, #f0c3ff 5%, #c770f0 48%, #72f5e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typewriter-box {
+  min-height: 64px;
+}
+
+.home-tagline {
+  max-width: 610px;
+  line-height: 1.8;
+}
+
+.home-svg {
+  max-width: 470px;
+  filter: drop-shadow(0 16px 36px rgba(94, 44, 136, 0.3));
+}
+
+.project-heading::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin: 12px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--imp-text-color), #00f5d4);
+  box-shadow: 0 0 16px rgba(199, 112, 240, 0.36);
+}
+
+.about-card-box,
+.wp-timeline-box {
+  background: linear-gradient(145deg, rgba(28, 23, 48, 0.86), rgba(15, 14, 28, 0.8));
+  border-color: var(--soft-border);
+  border-radius: 16px;
+}
+
+.project-card-view {
+  background: linear-gradient(155deg, rgba(31, 25, 52, 0.93), rgba(15, 14, 28, 0.9)) !important;
+  border-color: var(--soft-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 30px rgba(3, 2, 12, 0.22) !important;
+  min-height: 100%;
+}
+
+.project-card-view:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 18px 38px rgba(3, 2, 12, 0.38), 0 0 22px rgba(199, 112, 240, 0.14) !important;
+}
+
+.card-header-icon {
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(199, 112, 240, 0.2);
+  border-radius: 14px;
+}
+
+.card-status-badge {
+  max-width: calc(100% - 112px);
+  text-align: center;
+}
+
+.jobdesc-card-box {
+  border: 1px solid rgba(199, 112, 240, 0.12);
+  border-left: 3px solid var(--imp-text-color);
+  border-radius: 0 10px 10px 0;
+  background: rgba(8, 7, 17, 0.45);
+}
+
+.card-btn-group {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  min-height: 42px;
+  border-radius: 999px;
+}
+
+.btn-primary {
+  background: linear-gradient(110deg, #7540a0, #63358b) !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 24px rgba(157, 78, 221, 0.3);
+}
+
+.wp-card-view {
+  border-color: var(--soft-border);
+  border-radius: 14px;
+  background: linear-gradient(155deg, rgba(30, 25, 50, 0.9), rgba(13, 12, 25, 0.9));
+}
+
+.wp-card-view:hover {
+  transform: translateY(-6px);
+}
+
+.exp-photo-card {
+  border-radius: 12px;
+}
+
+.footer {
+  background: rgba(9, 8, 17, 0.78);
+  border-top-color: var(--soft-border);
+}
+
+@media (max-width: 992px) {
+  .home-header::before {
+    margin-left: 0;
+  }
+
+  .home-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: min(320px, 86vw);
+    background: var(--surface-strong);
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.28);
+  }
+
+  .navbar-nav {
+    gap: 12px;
+  }
+
+  .nav-link {
+    padding: 10px 8px;
+  }
+
+  .home-section {
+    padding-top: 104px;
+  }
+
+  .home-content {
+    padding-top: 32px;
+  }
+
+  .home-header::before {
+    margin-bottom: 18px;
+  }
+
+  .home-svg {
+    max-width: 390px;
+  }
+
+  .home-about-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .project-section,
+  .experience-section {
+    padding-top: 76px;
+  }
+
+  .projects-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: 20px;
+  }
+
+  .project-card-view {
+    padding: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .heading {
+    padding-left: 0 !important;
+    font-size: 1.65em !important;
+  }
+
+  .heading-name {
+    padding-left: 0 !important;
+    font-size: 1.7em !important;
+  }
+
+  .typewriter-box {
+    font-size: 1.2em;
+    min-height: 56px;
+  }
+
+  .home-tagline {
+    font-size: 1rem;
+  }
+
+  .home-btn-group,
+  .card-btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-btn-group .btn,
+  .card-btn-group .btn {
+    width: 100%;
+  }
+
+  .project-heading {
+    font-size: 1.8em !important;
+  }
+
+  .wp-timeline-box {
+    padding: 26px 18px;
+  }
+
+  .experience-box {
+    padding: 24px !important;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
