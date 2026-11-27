@@ -328,8 +328,23 @@ main {
   filter: drop-shadow(0 0 25px rgba(199, 112, 240, 0.25));
 }
 
-.floating-icons circle {
+.floating-icons .float-icon {
+  transform-box: fill-box;
+  transform-origin: center;
   animation: float 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.2));
+}
+
+.floating-icons .float-ui {
+  animation-delay: -1s;
+}
+
+.floating-icons .float-react {
+  animation-delay: -2.2s;
+}
+
+.floating-icons .float-js {
+  animation-delay: -0.7s;
 }
 
 @keyframes float {
