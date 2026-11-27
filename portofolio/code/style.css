@@ -8,8 +8,8 @@
   --card-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   --btn-purple: #623686;
   --btn-purple-hover: #6d20c5d7;
-  --font-family: 'Raleway', sans-serif;
-  --font-body: 'Roboto', sans-serif;
+  --font-family: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
 }
 
 * {
@@ -24,13 +24,24 @@ html {
 }
 
 body {
-  font-family: var(--font-family) !important;
+  font-family: var(--font-body);
   background-color: #1b1a2e;
   background-image: var(--section-background-color);
   color: white;
   overflow-x: hidden;
   position: relative;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.btn {
+  font-family: var(--font-family);
 }
 
 /* Background Star Particle Canvas */
